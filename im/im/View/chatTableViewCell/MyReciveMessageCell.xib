@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="MyReciveMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3Rs-ZE-aAI">
+                        <rect key="frame" x="17" y="19" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3Rs-ZE-aAI" secondAttribute="height" multiplier="1:1" id="Vz7-7c-pvi"/>
+                            <constraint firstAttribute="width" constant="43" id="rPf-bf-z4x"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马云" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmy-WQ-L9s">
+                        <rect key="frame" x="65" y="19" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地位后ID后 i 啊还将前往会看见期望和客户请我看饥饿会尽快武器和空气文件和空间去玩" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="BQa-rl-jeL">
+                        <rect key="frame" x="81" y="46" width="194.5" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_receiver_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bdV-o4-WoB">
+                        <rect key="frame" x="65" y="41" width="218.5" height="46"/>
+                        <rect key="contentStretch" x="0.5" y="0.75" width="0.0" height="0.0"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.85957739639999997" green="0.85957739639999997" blue="0.85957739639999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="3Rs-ZE-aAI" secondAttribute="bottom" constant="11" id="2dp-si-RyH"/>
+                    <constraint firstItem="BQa-rl-jeL" firstAttribute="leading" secondItem="bdV-o4-WoB" secondAttribute="leading" constant="16" id="2lJ-PO-deb"/>
+                    <constraint firstItem="3Rs-ZE-aAI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="53y-Eg-XUF"/>
+                    <constraint firstItem="Hmy-WQ-L9s" firstAttribute="leading" secondItem="3Rs-ZE-aAI" secondAttribute="trailing" constant="5" id="IXK-GJ-CKk"/>
+                    <constraint firstItem="3Rs-ZE-aAI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="QZd-7Z-Efg"/>
+                    <constraint firstItem="bdV-o4-WoB" firstAttribute="leading" secondItem="3Rs-ZE-aAI" secondAttribute="trailing" constant="5" id="fFz-s9-2fJ"/>
+                    <constraint firstItem="Hmy-WQ-L9s" firstAttribute="top" secondItem="3Rs-ZE-aAI" secondAttribute="top" id="j9g-qH-0RQ"/>
+                    <constraint firstItem="bdV-o4-WoB" firstAttribute="trailing" secondItem="BQa-rl-jeL" secondAttribute="trailing" constant="8" id="kuV-Ez-Nou"/>
+                    <constraint firstItem="bdV-o4-WoB" firstAttribute="bottom" secondItem="BQa-rl-jeL" secondAttribute="bottom" constant="5" id="vGK-iK-qHS"/>
+                    <constraint firstItem="BQa-rl-jeL" firstAttribute="top" secondItem="bdV-o4-WoB" secondAttribute="top" constant="5" id="vhv-2V-BrR"/>
+                    <constraint firstItem="bdV-o4-WoB" firstAttribute="top" secondItem="Hmy-WQ-L9s" secondAttribute="bottom" constant="5" id="vun-Th-dEl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageView" destination="3Rs-ZE-aAI" id="soi-7b-NcR"/>
+                <outlet property="nickNameLable" destination="Hmy-WQ-L9s" id="jGK-gJ-RcM"/>
+                <outlet property="reciveChatBackImageView" destination="bdV-o4-WoB" id="0bg-9w-FWi"/>
+                <outlet property="reciveChatLable" destination="BQa-rl-jeL" id="l2w-9b-gvM"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="30.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="chat_receiver_bg" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+//
+//  CavanPCH.pch
+//  im
+//
+//  Created by 历成栋 on 2017/2/19.
+//  Copyright © 2017年 cavan. All rights reserved.
+//
+
+#ifndef CavanPCH_pch
+#define CavanPCH_pch
+
+#import "macro.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* CavanPCH_pch */

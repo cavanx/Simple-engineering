@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatController">
+            <connections>
+                <outlet property="chatTableView" destination="h2f-6K-Z7t" id="bc4-sF-YHS"/>
+                <outlet property="chatTableViewbottom" destination="Dyk-ho-caF" id="Pwz-Hc-Ppm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h2f-6K-Z7t">
+                    <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bLE-pA-7se"/>
+                        <outlet property="delegate" destination="-1" id="yaX-VT-Ynv"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="h2f-6K-Z7t" secondAttribute="trailing" id="0zg-wB-05J"/>
+                <constraint firstItem="h2f-6K-Z7t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="25Q-QO-jn6"/>
+                <constraint firstAttribute="bottom" secondItem="h2f-6K-Z7t" secondAttribute="bottom" constant="49" id="Dyk-ho-caF"/>
+                <constraint firstItem="h2f-6K-Z7t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="RCP-LS-XHN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
